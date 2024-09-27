@@ -7,7 +7,7 @@ module "resource_group" {
 module "vnet"{
     source= "./modules/vnet"
     vnet_name = var.vnet_name
-    subnet_name = var.subnet_name
     address_space = var.address_space
+    subnet_name = var.subnet_name
     
 }
