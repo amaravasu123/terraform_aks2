@@ -24,8 +24,3 @@ variable "subnet_name" {
   type = string
 }
 
-variable "subnet_address_prefix" {
-    description = "The name of the Subnet"
-    type = string
-  
-}
