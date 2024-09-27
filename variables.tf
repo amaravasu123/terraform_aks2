@@ -8,8 +8,17 @@ variable "location" {
   type = string
 }
 
-variable "tags" {
-  type        = map(any)
-  description = "common tags to be assigned to all the resources"
-  default     = {}
+variable "vnet_name" {
+  description = "The name of the Virtual Network"
+  type = string
+}
+
+variable "address_space" {
+  description = "The address space for the Virtual Network"
+  type = string
+}
+
+variable "subnet_name" {
+  description = "The name of the Subnet"
+  type = string
 }
