@@ -1,7 +1,7 @@
 resource "azurerm_virtual_network" "az_vnet" {
   name                = var.vnet_name
-  location            = module.resource-group.location
-  resource_group_name = module.resource-group.resource_group_name
+  location            = var.location
+  resource_group_name = var.resource_group_name
   address_space       = var.address_space
   tags                = merge(var.tags, var.additional_vnet_tags)
 }
