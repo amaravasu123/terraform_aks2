@@ -1,5 +1,2 @@
 resource_group_name  = "myResourceGroup"
 location             = "East US"
-vnet_name            = "myVnet"
-address_space        = "10.0.0.0/16"
-subnet_name          = "mySubnet"
